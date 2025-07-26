@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Briefing | Studio EcoCriativo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://i.postimg.cc/PqZRRBBD/logo-2.png" alt="Studio EcoCriativo" class="logo" />
+      <h1>STUDIO <span>ECOCRIATIVO</span></h1>
+      <p class="subtitle">Preencha o briefing para iniciarmos seu projeto!</p>
+    </header>
+
+    <form id="briefingForm">
+      <h2>Informações Básicas</h2>
+      <input type="text" name="nome" placeholder="Seu nome completo" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="telefone" placeholder="WhatsApp com DDD" required>
+
+      <h2>Sobre o Projeto</h2>
+      <select name="tipo">
+        <option value="">Tipo de projeto</option>
+        <option>Identidade Visual</option>
+        <option>Logotipo</option>
+        <option>Social Media</option>
+        <option>PDF / Apresentação</option>
+        <option>Outro</option>
+      </select>
+
+      <textarea name="descricao" placeholder="Descreva brevemente o que você precisa" required></textarea>
+      <textarea name="objetivo" placeholder="Qual o objetivo desse projeto?" required></textarea>
+      <textarea name="publico" placeholder="Quem é o seu público-alvo?" required></textarea>
+      <textarea name="referencias" placeholder="Você tem referências ou inspirações?" required></textarea>
+
+      <h2>Escolha até 3 cores principais</h2>
+      <div class="cores">
+        <input type="color" name="cor1" title="Cor 1">
+        <input type="color" name="cor2" title="Cor 2">
+        <input type="color" name="cor3" title="Cor 3">
+      </div>
+
+      <textarea name="extra" placeholder="Deseja nos contar mais algo?"></textarea>
+
+      <button type="submit" class="btn-enviar"><i data-lucide="send"></i> Enviar Briefing</button>
+    </form>
+
+    <footer>
+      &copy; 2025 STUDIO ECOCRIATIVO · Todos os direitos reservados
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
